@@ -25,3 +25,7 @@ app.use((err, req, res, next) => {
 })
 
 const PORT = process.env.PORT || 3001
+
+app.listen(PORT, (req, res) =>{
+    console.log(`Server listening at ${PORT}`);
+})

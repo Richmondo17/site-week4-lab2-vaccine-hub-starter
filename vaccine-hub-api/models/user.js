@@ -1,4 +1,4 @@
-const  { UnauthorizedError } = require("../utils/erros")
+const  { UnauthorizedError } = require("../utils/errors")
 
 class User {
     static async login(credentials){
@@ -15,7 +15,7 @@ class User {
     }
 
 
-    static async reguster(credentials) {
+    static async register(credentials) {
         //user should submit email, password, rsvp status, and # of guests
         // if any of thes fields are missing, throw an error
         //
